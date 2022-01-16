@@ -1,0 +1,18 @@
+Loss times
+0310 05 AM
+0310 08 AM
+0310 02 PM
+0310 08 PM
+0310 11 PM
+0312 05 AM
+0312 08 AM
+0312 02 PM
+0312 08 PM
+0312 11 PM
+0315 05 AM
+0315 08 AM
+0315 02 PM
+
+Mylie Schmidt was playing during each loss
+
+13 Roulette_Losses
