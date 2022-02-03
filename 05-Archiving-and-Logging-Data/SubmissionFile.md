@@ -19,7 +19,7 @@ Save and submit the completed file for your homework submission.
 
 **Bonus** 
 - Command to create an incremental archive called `logs_backup_tar.gz` with only changed files to `snapshot.file` for the `/var/log` directory:
-
+    tar cvvWf logs_backup_tar.gz --listed-incremental=snapshot.file /var/log
 #### Critical Analysis Question
 
 - Why wouldn't you use the options `-x` and `-c` at the same time with `tar`?
@@ -92,13 +92,15 @@ Save and submit the completed file for your homework submission.
 ### Bonus: Check for Policy and File Violations
 
 1. Command to verify `auditd` is active:
+    systemctl status auditd
 
 2. Command to set number of retained logs and maximum log file size:
 
     - Add the edits made to the configuration file below:
 
     ```bash
-    [Your solution edits here]
+    max_log_file = 35
+    num_logs = 7
     ```
 
 3. Command using `auditd` to set rules for `/etc/shadow`, `/etc/passwd` and `/var/log/auth.log`:
@@ -107,38 +109,49 @@ Save and submit the completed file for your homework submission.
     - Add the edits made to the `rules` file below:
 
     ```bash
-    [Your solution edits here]
+    -w /etc/shadow -p wra -k hashpass_audit
+    -w /etc/passwd -p wra -k userpass_audit
+    -w /var/log/auth.log -p wra -k authlog_audit
     ```
 
 4. Command to restart `auditd`:
-
+    sudo systemctl restart auditd
+    
 5. Command to list all `auditd` rules:
+    sudo auditctl -l
 
 6. Command to produce an audit report:
+    sudo aureport -au
 
 7. Create a user with `sudo useradd attacker` and produce an audit report that lists account modifications:
+    aureport –m
 
 8. Command to use `auditd` to watch `/var/log/cron`:
+    sudo auditctl –w /var/log/cron/ -p wr -k cron_audit
 
 9. Command to verify `auditd` rules:
+    sudo auditctl -l
 
 ---
 
 ### Bonus (Research Activity): Perform Various Log Filtering Techniques
 
 1. Command to return `journalctl` messages with priorities from emergency to error:
+    journalctl -p 0..3 -b
 
-1. Command to check the disk usage of the system journal unit since the most recent boot:
+2. Command to check the disk usage of the system journal unit since the most recent boot:
+    journalctl --unit=systemd-journald -b
 
-1. Comand to remove all archived journal files except the most recent two:
+3. Comand to remove all archived journal files except the most recent two:
+    sudo journalctl --vacuum-files=2
 
+4. Command to filter all log messages with priority levels between zero and two, and save output to `/home/sysadmin/Priority_High.txt`:
+    journalctl -p 0..2 > /home/student/Priority_High.txt
 
-1. Command to filter all log messages with priority levels between zero and two, and save output to `/home/sysadmin/Priority_High.txt`:
-
-1. Command to automate the last command in a daily cronjob. Add the edits made to the crontab file below:
+5. Command to automate the last command in a daily cronjob. Add the edits made to the crontab file below:
 
     ```bash
-    [Your solution cron edits here]
+    0 0 * * * journalctl -p 0..2 > /home/student/Priority_High.txt
     ```
 
 ---
