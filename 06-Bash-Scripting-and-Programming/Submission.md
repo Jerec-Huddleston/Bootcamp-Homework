@@ -36,7 +36,7 @@
     ```bash
     sudo nano /etc/ssh/sshd_config
     
-    Port 222
+    Port 2222
     Port 22
     ```
 
