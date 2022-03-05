@@ -119,7 +119,7 @@
 
 - Used **nslookup** to check TXT record:s for `princessleia.site`
 
-  -`nslookup -type=txt princessleia.site`
+  - `nslookup -type=txt princessleia.site`
   
   `Run the following in a command line: telnet towel.blinkenlights.nl or as a backup access in a browser: www.asciimation.co.nz`
   
