@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![diagram](https://github.com/Jerec-Huddleston/Bootcamp-Homework/blob/main/13-Elk-Stack-Project/Images/Unit%2013.drawio.png)
+![diagram](../Diagrams/Unit%2013.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the `DVWA_pentest.yml` file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -66,7 +66,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![docker](https://github.com/Jerec-Huddleston/Bootcamp-Homework/blob/main/13-Elk-Stack-Project/Images/docker%20ps.png)
+![docker](Images/docker%20ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines: 10.0.0.5, 10.0.0.6, and 10.0.0.7
