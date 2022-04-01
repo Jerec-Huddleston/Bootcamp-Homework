@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-!(Images/Unit 13.drawio.png)
+![diagram](https://github.com/Jerec-Huddleston/Bootcamp-Homework/blob/main/13-Elk-Stack-Project/Images/Unit%2013.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the `DVWA_pentest.yml` file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -56,18 +56,17 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because of the speed, efficency, and repeatability in deplyoing software to multiple machines.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because of the speed, efficiency, and repeatability in deploying software to multiple machines.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- The playbook configures teh ELK machine to use the required about on memory
+- The playbook configures the ELK machine to use the required about on memory
 - Python3 and docker are downloaded and installed on the machine as well as the docker python module
 - The ELK docker container is downloaded and installed
 - The Docker service is configured to be enabled on startup
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-!(Images/docker ps.png)
+![docker](https://github.com/Jerec-Huddleston/Bootcamp-Homework/blob/main/13-Elk-Stack-Project/Images/docker%20ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines: 10.0.0.5, 10.0.0.6, and 10.0.0.7
