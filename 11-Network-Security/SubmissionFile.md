@@ -113,7 +113,7 @@ Before getting started, you should verify that you do not have any instances of 
 - Run the command that removes any running instance of `ufw`.
 
     ```bash
-    $ sudo ufw disable && sudo systemctl disable ufw
+    $ sudo ufw disable ; sudo systemctl disable ufw
     ```
 
 #### Enable and start `firewalld`
