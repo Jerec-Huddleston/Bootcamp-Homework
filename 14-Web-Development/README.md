@@ -9,31 +9,31 @@
 Answer the following questions about the HTTP request and response process.
 
 1. What type of architecture does the HTTP request and response process occur in?
-    Client-Server Architecture
+    - Client-Server Architecture
 
 2. What are the different parts of an HTTP request? 
-    GET, HEAD, POST, PUT, DELETE, CONNECT, and OPTIONS.
+    - GET, HEAD, POST, PUT, DELETE, CONNECT, and OPTIONS.
 
 3. Which part of an HTTP request is optional?
-    Request body
+    - Request body
 
 4. What are the three parts of an HTTP response?
-Status line, headers, and response body.
+    - Status line, headers, and response body.
 
 5. Which number class of status codes represents errors?
-    400
+    - 400
 
 6. What are the two most common request methods that a security professional will encounter?
-    GET and POST.
+    - GET and POST.
 
 7. Which type of HTTP request method is used for sending data?
-    POST
+    - POST
 
 8. Which part of an HTTP request contains the data being sent to the server?
-    Request Body
+    - Request Body
 
 9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?
-    Request Body
+    - Request Body
 
 
 #### Using curl
@@ -41,19 +41,19 @@ Status line, headers, and response body.
 Answer the following questions about `curl`:
 
 10. What are the advantages of using `curl` over the browser?
-    Curl can be used to precisely control the requests and examine responses in a way that isn't always possible in the browser. Another advantage is that Curl requests can be easily automated.
+    - Curl can be used to precisely control the requests and examine responses in a way that isn't always possible in the browser. Another advantage is that Curl requests can be easily automated.
 
 11. Which `curl` option is used to change the request method?
-    `-X`
+    - `-X`
 
 12. Which `curl` option is used to set request headers?
-    `-H`
+    - `-H`
 
 13. Which `curl` option is used to view the response header?
-    `--head`
+    - `--head`
 
 14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
-    OPTIONS
+    - OPTIONS
 
 #### Sessions and Cookies
 
@@ -68,7 +68,7 @@ Answer the following questions about sessions and cookies:
     Content-type: text/html
     Set-Cookie: cart=Bob
     ```
-    Set-Cookie: cart=Bob
+    - Set-Cookie: cart=Bob
 
 16. Which request header will continue the client's session?
 
@@ -77,7 +77,7 @@ Answer the following questions about sessions and cookies:
     Host: www.example.org
     Cookie: cart=Bob
     ```
-    Cookie: cart=Bob
+    - Cookie: cart=Bob
     
 
 #### Example HTTP Requests and Responses
@@ -100,16 +100,16 @@ username=Barbara&password=password
 ```
 
 17. What is the request method?
-    POST
+    - POST
 
 18. Which header expresses the client's preference for an encrypted response?
-    Upgrade-Insecure-Requests: 1
+    - Upgrade-Insecure-Requests: 1
 
 19. Does the request have a user session associated with it?
-    No
+    - No
 
 20. What kind of data is being sent from this request body?
-    Login credentials
+    - Login credentials
 
 **HTTP Response**
 
@@ -131,53 +131,53 @@ X-XSS-Protection: 1; mode=block
 ```
 
 21. What is the response status code?
-    200
+    - 200
 
 22. What web server is handling this HTTP response?
-    Apache
+    - Apache
 
 23. Does this response have a user session associated to it?
-    Yes
+    - Yes
 
 24. What kind of content is likely to be in the [page content] response body?
-    Either a log in interface or the page shown after succesful log in
+    - Either a log in interface or the page shown after succesful log in
 
 25. If your class covered security headers, what security request headers have been included?
-    Strict-Transport-Security
+    - Strict-Transport-Security
 
 #### Monoliths and Microservices
 
 Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?
-    Services
+    - Services
 
 27. What is a service that writes to a database and communicates to other services?
-    API
+    - API
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
-    Docker
+    - Docker
 
 #### Deploying and Testing a Container Set
 
 Answer the following questions about multi-container deployment:
 
 29. What tool can be used to deploy multiple containers at once?
-    Ansible
+    - Ansible
 
 30. What kind of file format is required for us to deploy a container set?
-    `yaml`
+    - `yaml`
 
 #### Databases
 
 31. Which type of SQL query would we use to see all of the information within a table called `customers`?
-    `SELECT * FROM customers;`
+    - `SELECT * FROM customers;`
 
 32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
-    `INSERT INTO`
+    - `INSERT INTO`
 
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
-    It would delete the entire table.
+    - It would delete the entire table.
 
 ---
 
