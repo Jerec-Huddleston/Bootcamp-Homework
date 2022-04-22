@@ -14,16 +14,20 @@
 Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the following questions based on the results:
 
   1. Where is the company located:
-    * Sunnyvale, CA 94085 US
+  
+    - Sunnyvale, CA 94085 US
     
   2. What is the NetRange IP address:
-    * `65.61.137.64 - 65.61.137.127`
+  
+    - `65.61.137.64 - 65.61.137.127`
 
   3. What is the company they use to store their infrastructure:
-    * Rackspace Backbone Engineering
+  
+    - Rackspace Backbone Engineering
 
   4. What is the IP address of the DNS server:
-    * `23.211.61.64`
+  
+    - `23.211.61.64`
 
 #### Step 3: Shodan
 
@@ -46,13 +50,13 @@ Is Altoro Mutual vulnerable to XSS:
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
 
 - Command for Zenmap to run a service scan against the Metasploitable machine:
-  * `nmap -sV 192.168.0.10`
+  - `nmap -sV 192.168.0.10`
  
 - Bonus command to output results into a new text file named `zenmapscan.txt`:
-  * `nmap -sV -oN zenmapscan.txt 192.168.0.10`
+  - `nmap -sV -oN zenmapscan.txt 192.168.0.10`
 
 - Zenmap vulnerability script command:
-  * `nmap --script samba-vuln-cve-2012-1182 192.168.0.10`
+  - `nmap --script samba-vuln-cve-2012-1182 192.168.0.10`
 
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
