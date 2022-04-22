@@ -14,16 +14,16 @@
 Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the following questions based on the results:
 
   1. Where is the company located:
-  - Sunnyvale, CA 94085 US
+      - Sunnyvale, CA 94085 US
     
   2. What is the NetRange IP address:
-  - `65.61.137.64 - 65.61.137.127`
+      - `65.61.137.64 - 65.61.137.127`
 
   3. What is the company they use to store their infrastructure:
-  - Rackspace Backbone Engineering
+      - Rackspace Backbone Engineering
   
   4. What is the IP address of the DNS server:
-  - `23.211.61.64`
+      - `23.211.61.64`
 
 #### Step 3: Shodan
 
